@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  margin-left: 15px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d86f0 !important;
+  border-color: #0da1f0 !important;
+}
+
+.navbar-toggler {
+  color: rgb(26, 92, 157);
+}
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: hsl(0, 0%, 100%) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-toggler {
+  color: #0d86f0 !important;
+}
+
+
+/* Header */
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(#000000c0, #0000, #000000aa), url("../image/Satellitenkommunikation.jpg");
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: white;
+  background-size: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(205, 205, 205, 0.185) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 180, 180, 0.326) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+section .about_home h3 {
+  font-size: 45px;
+  z-index: 1;
+}
+
+section .about_home span {
+  font-size: 18px;
+  z-index: 1;
+}
+
+/* From Uiverse.io by barisdogansutcu */
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(209, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 135, 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(206, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(24, 109, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+/* section about */
+
+#about h2 {
+  color: #094e8b;
+}
+
+#about p {
+  line-height: 35px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#about {
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(205, 205, 205, 0.587) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 180, 180, 0.658) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* section Our Engineering and Technical Solutions */
+
+.solutions-section {
+  background: #f3f6f7;
+}
+
+.section-title {
+  color: #094e8b;
+  font-size: 35px;
+}
+
+.solution-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+  height: 100%;
+}
+
+.solution-card .icon {
+  font-size: 35px;
+  color: #2e7c89;
+}
+
+.solution-card {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.solution-card .ico-circle i {
+  color: black;
+  margin-top: 8px;
+}
+
+
+.ico-circle {
+  height: 80px;
+  width: 80px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 2.5;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0077ff;
+  display: block;
+  transition: all 500ms;
+}
+
+.solution-card:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 10px #cde1f8;
+}
+
+.solution-card h5 {
+  color: #094e8b;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.solution-card p {
+  color: #5f6c75;
+  line-height: 1.6;
+}
+
+/* تأثير hover تطفو + إضاءة */
+.solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 150, 170, 0.28);
+}
+
+/* section Majed A.Ashary */
+
+.founder-section {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* .sec_founder {
+  background: #f3f6f7;
+} */
+
+.founder-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(205, 205, 205, 0.587) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 180, 180, 0.658) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+
+.image-bg-shape {
+  position: absolute;
+  width: 340px;
+  height: 370px;
+  background: #2f539a;
+  border-radius: 12px;
+  top: 65px;
+  left: 20px;
+  z-index: 1;
+}
+
+.founder-img {
+  width: 350px;
+  height: 400px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.quote-icon {
+  font-size: 60px;
+  font-weight: bold;
+  color: #094e8b;
+  line-height: 0.6;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.founder-section p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.founder-section h6 {
+  color: #094e8b;
+}
+
+/* section Certified certificates  */
+
+.certificate {
+  background: #f3f6f7;
+}
+
+img {
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+.card {
+  width: 330px;
+  margin: auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 35px rgba(0, 119, 255, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 330px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.03);
+}
+
+.certificate .card h5 {
+  color: #094e8b;
+  font-weight: bolder;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #0b1f30;
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 160px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.social-links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #094e8b;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  background: #fff;
+  color: #0bb1b1;
+  transform: translateY(-6px);
+  box-shadow: 0px 15px 35px rgba(0, 119, 255, 0.25);
+  }
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #66caee;
+  padding-left: 4px;
+}
+
+.footer-map {
+  width: 200px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.footer-map iframe {
+  border-radius: 8px;
+}
+
+/* END */
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 25px 0;
+  background-color: #06131d;
+}
+
+/* .back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+  width: 100%;
+  margin-left: 95%;
+} */
+
+.back-to-top {
+  width: 45px;       /* حجم الدائرة */
+  height: 45px;
+  border-radius: 50%;
+  background-color: #1c6f98; /* اللون اللبني */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.back-to-top i {
+  color: #fff;      
+  font-size: 20px;
+}
+
+/* تأثير Hover */
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 0 18px rgba(0, 188, 212, 0.7);
+}
