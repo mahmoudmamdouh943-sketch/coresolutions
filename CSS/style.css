@@ -59,7 +59,6 @@
   height: 100vh;
   background-image: linear-gradient(#000000c0, #0000, #000000aa), url("../image/Satellitenkommunikation.jpg");
   position: relative;
-  background-attachment: fixed;
   overflow: hidden;
   color: white;
   background-size: cover;
